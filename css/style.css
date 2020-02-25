@@ -1,3 +1,4 @@
+  
 body{
 	background-color: #DCDCDC;
 	font-family: 'ZCOOL QingKe HuangYou', sans-serif;
@@ -72,12 +73,10 @@ header{
 		typing 3.5s steps (40,end),
 		blink-caret .75s step-end infinite
 }
-
 @keyframes typing{
 	from {width:0;}
   	to {width:100%;
 }
-
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
@@ -182,10 +181,14 @@ details p{
 
 .videos{
 	display: grid;
-	grid-template-columns:repeat(2, 1fr);
+	grid-template-columns:repeat(2, 50vw);
 	grid-template-rows: repeat(5, 1fr);
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
+}
+
+video{
+	width:100%;
 }
 
 .baboon{
@@ -199,19 +202,36 @@ details p{
 	opacity: 0.3;
 }
 
-/*.baboon-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}*/
 
+/*.baboon-overlay{
+	position: absolute;
+  	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+
+.baboon-container:hover .baboon-overlay{
+	opacity: 1;
+}
+
+.text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+}
+*/
 .cow{
 	grid-row: 1;
 	grid-column: 2;
@@ -314,6 +334,4 @@ details p{
 #label, #label1, #label2, #label3, #label4{
 	font-size: 20px;
 }
-
-
 
