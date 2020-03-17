@@ -8,22 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
 </head>
 <body>
- <div class="jump"><a href="#main">Jump to Content</a></div>
+ <!-- <div class="jump"><a href="#main">Jump to Content</a></div> -->
+	<header>
 	<nav>
 		<ul>
 			<li><a href="index.html">home</a></li>
-			<li><a href="vidoes.html">videos</a></li>
+			<li><a href="videos.html">videos</a></li>
 			<li><a href="poems.html">poems</a></li>
 			<li><a class="active" href="contact.html">contact</a></li>
 			</ul>
 		</nav>
+		<h1 class= "sav"> Sav's Space</h1>
+	</header>
 	<main>
-		<header id = "main">
-			<h1>Sav's Space</h1>
-		</header>
 		<div class="parallax-2"></div>
 		<p class="shadow"> Still inquisitive?</p>
-		
  		<div class ="contact-form">
  			<form 
  				action="https://formspree.io/xyyjejow" 
@@ -32,21 +31,23 @@
  				<fieldset>
  					<legend>let's connect</legend>
 					<label id= "label" for="first-name">First Name:</label>
-					<input type = "text" name="first-name"><br>
+					<input type = "text" id="first-name" name="first-name"><br>
 					<label id ="label1" for="last-name">Last Name:</label> 
-					<input type = "text" name="last-name"><br>
+					<input type = "text" id="last-name" name="last-name"><br>
 					<label id="label2"> Email:
-						<input id="label3" type="email" name="email" value= "email@gmail.com"><br>
+						<input id="email-input" type="email" name="email" value= "email@gmail.com"><br>
 					</label>
 					<label id="label3" for="message">Message:</label>
-					<textarea></textarea> 
+					<textarea id = "message"></textarea> 
 					<input type="submit" value ="Submit!">
 				</fieldset>
 			</form>	
 		</div>
+		<div class="parallax-3"></div>
 	</main>
 	<footer>
 		<p>Designed for Si 339<br>By Savannah Cooper</p>
 	</footer>
 </body>
+</html>
 
